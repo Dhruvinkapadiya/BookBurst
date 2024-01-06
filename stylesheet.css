@@ -318,7 +318,6 @@ nav button{
 @media only screen and (max-width: 768px) {
     .about img{
         width: 300px;
-        margin-top: 10%;
     }
     .nav li{
         display: none;
@@ -335,7 +334,7 @@ nav button{
         font-size: 15px;
     }
     .services{
-        height: 850px;
+        height: 950px;
     }
     .services1{
         margin-left: 0;
