@@ -308,6 +308,13 @@ nav button{
     margin-top: 1%;
     margin-left: 10%;
 }
+#lightlogo{
+    margin-top: 1%;
+    margin-left: 1%;
+}
+#darklogo{
+    margin-top: 1%;margin-left: 1%;display: none;
+}
 @media only screen and (max-width: 768px) {
     .about img{
         width: 300px;
@@ -399,5 +406,12 @@ nav button{
     }
     .links a{
         margin-right: 18%;       
+    }
+    #lightlogo{
+        margin-top: 4%;
+        margin-left: 1%;
+    }
+    #darklogo{
+        margin-top: 4%;margin-left: 1%;display: none;
     }
 }
