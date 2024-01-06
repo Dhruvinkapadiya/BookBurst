@@ -310,7 +310,7 @@ nav button{
 }
 @media only screen and (max-width: 768px) {
     .about img{
-        width: 250px;
+        width: 300px;
     }
     .nav li{
         display: none;
@@ -327,7 +327,7 @@ nav button{
         font-size: 15px;
     }
     .services{
-        height: 975px;
+        height: 850px;
     }
     .services1{
         margin-left: 0;
@@ -336,13 +336,16 @@ nav button{
         margin: 5% auto; /* Center the items */
         border-radius: 0; /* Remove border-radius for small screens if needed */
     }
-
     .item img {
         margin-top: 0;
         margin-left: 0;
         width: 150px; /* Make the image fill the container */
         margin-top: 5%;
         margin-left: 25%;
+        justify-content: center;
+    }
+    .item button{
+        margin-left: 20%;
     }
 
     .item p {
@@ -371,7 +374,7 @@ nav button{
         height: 1000px;
     }
     .social-media a{
-        margin-left: 40%;
+        margin-left: 35%;
     }
     .contact form{
         margin-right: 100%;
@@ -394,7 +397,7 @@ nav button{
         margin-left: 12vh;
         margin-top: 5%;
     }
-    .links{
-
+    .links a{
+        margin-right: 18%;       
     }
 }
