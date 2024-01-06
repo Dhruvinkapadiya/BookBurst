@@ -327,7 +327,7 @@ nav button{
         font-size: 15px;
     }
     .services{
-        height: 825px;
+        height: 975px;
     }
     .services1{
         margin-left: 0;
@@ -394,5 +394,7 @@ nav button{
         margin-left: 12vh;
         margin-top: 5%;
     }
+    .links{
 
+    }
 }
