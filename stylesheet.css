@@ -318,7 +318,7 @@ nav button{
 @media only screen and (max-width: 768px) {
     .about img{
         width: 300px;
-        margin-top: 5%;
+        margin-top: 10%;
     }
     .nav li{
         display: none;
