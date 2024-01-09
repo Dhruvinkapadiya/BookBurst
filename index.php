@@ -20,8 +20,8 @@
     <section id="nav">
         <nav>
            <div class="nav">
-             <img src="light mode logo.png" height="50px" style="" width="150px" id="lightlogo" alt="">
-             <img src="dark more logo.png" height="50px" style="" id="darklogo" width="150px" alt="">
+             <img src="light mode logo.png" height="50px" width="150px" id="lightlogo" alt="">
+             <img src="dark more logo.png" height="50px" id="darklogo" width="150px" alt="">
              <ul id="navbar">        
                <li><a href="#home" id="homenav">Home</a></li>
                <li><a href="#about" id="aboutnav">About</a></li>
@@ -260,8 +260,7 @@
             <div class="row">
                 <h1>Contact</h1>
                 <div class="col-md-6">
-                    <form action="https://formspree.io/f/mkndnyov"
-                    method="POST">
+                    <form method="POST">
                         <input type="text" style="float: left; margin-left: 25%;" placeholder="Name" name="name" required id="input1">
                         <input type="email" style="margin-left: 3%;" placeholder="E-Mail" name="email" required id="input2"><br>
                         <input type="text" placeholder="Subject" required id="input3" name="subject"><br>
@@ -325,5 +324,42 @@
         crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
+
+<?php
+
+$username = "root";
+$password = "";
+$host = 'localhost';
+$database = 'bookburst';
+
+$con = mysqli_connect($host , $username , $password , $database);
+
+if($con)
+    {
+        ?>
+        <script>alert("Submit Data");</script>
+        <?php
+    }
+
+if(isset($_POST['submit']))
+{
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $massage = $_POST['massage'];
+
+    $insertquery = " INSERT INTO contact(name , email , subject , massage) VALUES ('$name' , '$email' , '$subject' , '$massage') ";
+
+    $res = mysqli_query($con , $insertquery);
+
+    if($res)
+    {
+        ?>
+        <script>alert("Submit Data");</script>
+        <?php
+    }
+}
+
+?>
 
 </html>
