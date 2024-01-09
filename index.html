@@ -325,41 +325,5 @@
     <script src="index.js"></script>
 </body>
 
-<?php
-
-$username = "root";
-$password = "";
-$host = 'localhost';
-$database = 'bookburst';
-
-$con = mysqli_connect($host , $username , $password , $database);
-
-if($con)
-    {
-        ?>
-        <script>alert("Submit Data");</script>
-        <?php
-    }
-
-if(isset($_POST['submit']))
-{
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $subject = $_POST['subject'];
-    $massage = $_POST['massage'];
-
-    $insertquery = " INSERT INTO contact(name , email , subject , massage) VALUES ('$name' , '$email' , '$subject' , '$massage') ";
-
-    $res = mysqli_query($con , $insertquery);
-
-    if($res)
-    {
-        ?>
-        <script>alert("Submit Data");</script>
-        <?php
-    }
-}
-
-?>
 
 </html>
